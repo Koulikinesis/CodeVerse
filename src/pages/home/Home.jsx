@@ -1,7 +1,7 @@
 import React from "react";
 import {useHistory} from "react-router-dom";
 
-import brandingLogo from "../../components/codexlogo.png";
+import brandingLogo from "../../components/codeverselogo.png";
 import "./home.css";
 
 import {
@@ -46,6 +46,8 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         brandingLogo: {
             cursor: "pointer",
+            height: "100px",
+            width: "100px",
         },
         buttonGroup: {
             "& .MuiButton-outlinedPrimary": {
@@ -166,10 +168,7 @@ function Home() {
                         <MenuItem value={"py"}>Python3</MenuItem>
                         <MenuItem value={"c"}>C</MenuItem>
                         <MenuItem value={"cpp"}>C++</MenuItem>
-                        <MenuItem value={"java"}>Java</MenuItem>
-                        <MenuItem value={"cs"}>C#</MenuItem>
-                        <MenuItem value={"go"}>Golang</MenuItem>
-                        <MenuItem value={"js"}>NodeJS</MenuItem>
+                        <MenuItem value={"java"}>Java</MenuItem>                        
                     </Select>
                 </FormControl>
             );
@@ -252,19 +251,11 @@ function Home() {
                             }}
                         >
                             New Class
-                        </Button>
+                        </Button>                        
                         <Button
                             className={classes.button}
                             onClick={() => {
-                                window.open("https://github.com/Jaagrav/CodeX-API", "_blank");
-                            }}
-                        >
-                            CodeX API
-                        </Button>
-                        <Button
-                            className={classes.button}
-                            onClick={() => {
-                                window.open("https://github.com/Jaagrav/CodeX", "_blank");
+                                window.open("https://github.com/Koulikinesis/CodeVerse", "_blank");
                             }}
                         >
                             GitHub

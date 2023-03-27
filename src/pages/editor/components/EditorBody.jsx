@@ -267,9 +267,7 @@ function EditorBody({storeAt, index}) {
                 <MenuItem value={"c"}>C</MenuItem>
                 <MenuItem value={"cpp"}>C++</MenuItem>
                 <MenuItem value={"java"}>Java</MenuItem>
-                <MenuItem value={"cs"}>C#</MenuItem>
-                <MenuItem value={"go"}>Golang</MenuItem>
-                <MenuItem value={"js"}>NodeJS</MenuItem>
+                
             </Select>
         );
     }
@@ -351,7 +349,7 @@ function EditorBody({storeAt, index}) {
                     <div className={classes.outputTitle}>Output</div>
                     <div className={classes.outputTerminal}>{`${outputValue}`}</div>
                     <div className={classes.runPanel}>
-                        <Button
+                        {/*<Button
                             size="small"
                             variant="contained"
                             color="primary"
@@ -363,7 +361,13 @@ function EditorBody({storeAt, index}) {
                             disabled={executing}
                         >
                             Run
-                        </Button>
+                        </Button>*/}
+                        <Button
+                            size="small"
+                            startIcon={<PlayArrowRoundedIcon/>}
+                            >
+                                Run
+                            </Button>
                         <SelectLanguage/>
                         {executing && (
                             <LinearProgress size={14} className={classes.buttonProgress}/>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import brandingLogo from "../../components/codexlogo.png";
+import brandingLogo from "../../components/codeverselogo.png";
 import "./editor.css";
 
 import { makeStyles, createStyles, Theme } from "@material-ui/core";
@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme: Theme) =>
       gridTemplateRows: "auto 1fr"
     },
     brandingLogo: {
-      cursor: "pointer"
+      cursor: "pointer",
+      height: "100px",
+      width: "100px"
     },
     header: {
       display: "grid",
