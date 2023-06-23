@@ -2,8 +2,7 @@
  JSX Web Compiler
  
  Developed by:
- Koulik Gorai 
- Rachana Kumari
+ Koulik Gorai & Rachana Kumari
  
 Abstract:
 This project presents an online web application software that is an online programming language compiler. This compiler, like any other standard offline compiler, compiles, takes user input, and executes the same way, but can work in various languages without the need to change the code editor and use a different compiler. This is done with the help of an online API that contains various compilers on the server containing the API. This carries a huge advantage as the user does not depend on their own system’s memory and other resources for the compilation and execution of code. 
